@@ -1,7 +1,13 @@
 const books = document.querySelectorAll('.book'),
     li = document.querySelectorAll('li'),
     titels = document.querySelectorAll('a'),
-    spam = document.querySelector('.adv');
+    spam = document.querySelector('.adv'),
+    h1 = document.querySelector('h1');
+
+h1.insertAdjacentText('beforebegin', '✎'); // текст над тэгом H1
+// h1.insertAdjacentText('afterend', 'afterend');
+h1.insertAdjacentText('afterbegin', '✵ '); // текст перед тэгом H1
+h1.insertAdjacentText('beforeend', ' ⚝'); // текст после тэга H1
 
 console.log(books);
 console.log(li);
